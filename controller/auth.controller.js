@@ -138,10 +138,10 @@ const signIn = async (req, res) =>{
         console.log("Error : ", err)
 
         return res.status(http.StatusCodes.INTERNAL_SERVER_ERROR).json({
-                success: false,
-                err: "interval server error",
-                message : err.message
-            });
+            success: false,
+            err: "interval server error",
+            message : err.message
+        });
     }
 }
 
